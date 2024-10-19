@@ -1,4 +1,4 @@
-USE DATABASE IF NOT EXIST alx_book_store
+CREATE DATABASE IF NOT EXIST alx_book_store
 
 CREATE TABLE Books (
     book_id INT Auto_Increment PRIMARY KEY,
