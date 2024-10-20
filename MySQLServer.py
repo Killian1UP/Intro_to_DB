@@ -13,7 +13,7 @@ def create_database(host, user, password, database_name):
         if connection.is_connected():
             cursor = connection.cursor()
 
-        cursor.execute(f"CREATE DATABASE {database_name}")
+        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database_name}")
         print(f"Database '{database_name}' created successfully!")
 
     except Error:
