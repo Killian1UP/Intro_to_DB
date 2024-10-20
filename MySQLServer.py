@@ -13,8 +13,8 @@ def create_database(host, user, password, database_name):
         if connection.is_connected():
             cursor = connection.cursor()
 
-        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database_name}")
-        print(f"Database '{database_name}' created successfully!")
+        cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+        print("Database 'alx_book_store' created successfully!")
 
     except Error:
         print("Error: Failing to connect to the Database!")
